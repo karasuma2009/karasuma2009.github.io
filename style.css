@@ -1,0 +1,150 @@
+body{
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+}
+.btn{
+  transition: all 1s;
+}
+/*ヘッダー*/
+header{
+  height: 100px;
+  overflow: hidden;
+  background: #808080;
+}
+header h1{
+  float: left;
+}
+header h1 a{
+  text-decoration: none;
+  color: #fff;
+}
+header h1.btn--translate:hover{
+  transform: translateY(20px);
+}
+/*ナビゲーション*/
+#top-nav{
+  width: 600px;
+  height: 100px;
+  position: relative;
+  float: right;
+}
+nav a{
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+#top-nav ul{
+  position: absolute;
+  height: 40px;
+  bottom: 0;
+  list-style: none;
+}
+#top-nav ul li{
+  float: left;
+}
+.btn--scale:hover{
+  transform: scale(1.5, 2);
+}
+/*メインコンテンツ*/
+img{
+  width: 100%;
+  height: 400px;
+}
+.site-width{
+  width: 980px;
+  margin: 0 auto;
+  background: #f6f5f5;
+}
+.site-width h1{
+  text-align: center;
+  margin-top: 10px;
+}
+/*テーブル*/
+table{
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+table tr th{
+  color: #ff6633;
+  padding-right: 15px;
+}
+/*フッター*/
+footer{
+  background: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+}
+footer a{
+  color: #fff;
+}
+footer a:hover{
+  color: #3333ff;
+}
+/*contact*/
+#contact{
+  margin-bottom: 100px;
+}
+#contact p{
+  text-align: center;
+}
+form{
+  margin: 0 auto;
+}
+input,textarea{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+input[type="text"]{
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+textarea{
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+input[type="submit"]{
+  background: #333;
+  border: none;
+  padding: 15px 30px;
+  color: #fff;
+  float: right;
+  margin-right: 50px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+  transition: all 1s;
+  transform: scale(1.5, 1.5);
+}
+/*バリデーション*/
+.help-block{
+  font-size: 14px;
+  margin-left: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/*エラー時*/
+.has-error input, .has-error textarea{
+  border: 1px solid #ff4d4b;
+}
+.has-error .help-block, .has-error label{
+  color: #ff4d4b;
+}
+/*サクセス時*/
+.has-success input, .has-success textarea{
+  border: 1px solid #2fb4ce;
+}
+.has-success .help-block, .has-success label{
+  color: #2fb4ce;
+}
