@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>お問い合わせページ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <section class="site-width">
+    <header>
+      <h1 class="btn btn--translate"><a href="index.html">超楽！プログラミングスクール</a></h1>
+      <nav id="top-nav">
+        <ul>
+          <li class="btn btn--scale"><a href="index.html">HOME</a></li>
+          <li class="btn btn--scale"><a href="#about">ABOUT</a></li>
+          <li class="btn btn--scale"><a href="#merit">MERIT</a></li>
+          <li class="btn btn--scale"><a href="#recruit">RECRUIT</a></li>
+          <li class="btn btn--scale"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--contact-->
+    <div id="main">
+      <section id="contact">
+      <h1>CONTACT</h1>
+      <p>受講ご希望の方、講師ご希望の方、その他各種お問い合わせは以下のフォームからお願いします。</p>
+      <form>
+        <div class="form-group">
+          <label>名前:必須<span class="help-block"></span>
+          <input type="text" name="name" class="valid-name valid-must">
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>携帯番号*任意
+            <input type="text" name="phone" class="format-number">
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>E-mail*必須<span class="help-block"></span>
+            <input type="text" name="email" class="valid-email valid-must">
+          </label>
+        </div>
+        
+        <div class="form-group">
+          <label>内容:*必須(200文字以内でお願いします)<span class="help-block"></span>
+            <textarea cols="100" rows="10" name="comment"
+            class="valid-textarea valid-must"></textarea>
+            <div class="counter">
+            <span class="show-count-text">0</span>/200
+            </div>
+          </label>
+        </div>
+        <input type="submit" name="submit" value="送信">
+      </form>
+    </section>
+    </div>
+
+    <footer>
+      Copyright <a href="http://webukatu.com/">ウェブカツ！！サンプルホームページ</a>.All Rights Reserved.
+    </footer>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+
+    </section>
+  </body>
+</html>
